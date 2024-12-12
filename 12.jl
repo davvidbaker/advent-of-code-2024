@@ -16,8 +16,6 @@ function expand(ci, mat, region, visited)
                 push!(region, newind)
 
                 region = expand(newind, mat, region, visited)
-
-                push!(region)
             end
         end
     end
@@ -86,8 +84,8 @@ function partone(input)
 end
 
 @test partone("12-test-1.txt") == 140
-
 @test partone("12-test-2.txt") == 772
-# partone("12.txt")
+@test partone("12-test-3.txt") == 1930
+partone("12.txt")
 
 # x = @time [i^2 for i in 1:1000000]
