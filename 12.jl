@@ -224,4 +224,4 @@ end
 @test parttwo("12-test-4.txt") == 236
 @test parttwo("12-test-5.txt") == 368
 
-parttwo("12.txt")
+@test parttwo("12.txt"== 834828)
